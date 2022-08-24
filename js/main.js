@@ -54,7 +54,7 @@ console.log("Estou dentro do main.js");
 // const elems = document.querySelectorAll("h1");
 // console.log(elems);
 
-const titulo = document.getElementById("titulo-principal");
+// const titulo = document.getElementById("titulo-principal");
 
 // // Altera a estilização
 // titulo.style.color = "red";
@@ -70,3 +70,125 @@ const titulo = document.getElementById("titulo-principal");
 
 // // Verifica se classe existe dentro do elemento
 // console.log(titulo.classList.contains("azul"));
+
+function teste() {
+  setTimeout(() => {
+    alert("Cadastro realizado com sucesso");
+  }, 2000);
+}
+
+// const title = document.getElementById("titulo-principal");
+
+// console.log(title);
+// // title.onclick = teste
+// title.onclick = function () {
+//   console.log("Cliquei no titulo 1");
+// };
+// title.onclick = function () {
+//   console.log("Cliquei no titulo 2");
+// };
+// // Com o addEventListener é possivel acumular eventos enquanto que com o onclick não
+// title.addEventListener("click", () => {
+//   console.log("AddEventListener 1 ");
+// });
+// title.addEventListener("click", () => {
+//   console.log("AddEventListener 2");
+// });
+
+// window.onload = function () {
+//   console.log("Janela carregou");
+// };
+
+// const azul = document.getElementsByClassName("azul");
+// console.log(azul);
+
+// // azul[0].addEventListener("click", () => {
+// //   alert("Primeiro elemento azul");
+// // });
+
+// for (let elem of azul) {
+//   elem.addEventListener("click", () => {
+//     alert("Primeiro elemento azul");
+//   });
+// }
+
+// const title = document.querySelector("#titulo-principal");
+
+// title.onmouseover = function () {
+//   console.log("Mouse over");
+//   title.classList.add("big");
+//   document.getElementById("dropdown").style.display = "block";
+// };
+// title.onmouseout = function () {
+//   console.log("Mouse out");
+//   title.classList.remove("big");
+//   document.getElementById("dropdown").style.display = "none";
+// };
+// // MENU SIDEBAR
+
+// const menu = document.getElementById("icon-menu");
+// menu.onclick = function () {
+//   document.getElementById("sidebar").style.left = 0;
+// };
+// const sidebar = document.getElementById("sidebar");
+
+// sidebar.onclick = function () {
+//   document.getElementById("sidebar").style.left = "-200px";
+// };
+
+// const input = document.querySelector("#input-text");
+
+// input.onkeydown = function (e) {
+//   // console.log("Estou pressionando a tecla");
+// };
+// input.onkeypress = function () {
+//   // console.log("Pressionei a tecla");
+// };
+// input.onkeyup = function (e) {
+//   // console.log(e);
+//   if (e.key === "a") {
+//     alert("Não pode digitar a letra 'a'");
+//     // console.log(input.value);
+//     input.value = input.value.replace("a", "");
+//   }
+//   // console.log("Deixei de pressionar a tecla");
+// };
+// input.addEventListener("focusout", function () {
+//   if (input.value.length < 8) {
+//     console.log("Valor muito pequeno");
+//     input.style.color = "red";
+//     input.style.borderColor = "red";
+//   }
+// });
+// input.addEventListener("focusin", function () {
+//   input.style.color = "black";
+// });
+
+// let total = 0;
+// const input1 = document.querySelector("#input-text-1");
+// const input2 = document.querySelector("#input-text-2");
+// const input3 = document.querySelector("#input-text-3");
+// const result = document.querySelector("#total");
+
+// input1.addEventListener("focusout", function (e) {
+//   total += parseInt(input1.value);
+//   result.innerText = total;
+// });
+// input2.addEventListener("focusout", function (e) {
+//   total += parseInt(input2.value);
+//   result.innerText = total;
+// });
+// input3.addEventListener("focusout", function (e) {
+//   total += parseInt(input3.value);
+//   result.innerText = total;
+// });
+
+// const input = document.getElementById("input-text");
+
+// input.oninput = function (e) {
+//   if (e.data === "a") {
+//     alert("Não pode digitar a letra 'a'");
+//     // console.log(input.value);
+//     input.value = input.value.replace("a", "");
+//   }
+// };

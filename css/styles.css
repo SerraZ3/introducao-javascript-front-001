@@ -1,0 +1,34 @@
+.azul {
+  color: blue;
+}
+.vermelho {
+  color: red;
+}
+.big {
+  font-size: 40px;
+}
+#dropdown {
+  display: none;
+}
+
+#nav-desk {
+  display: none;
+}
+#sidebar {
+  /* display: none; */
+  position: absolute;
+  left: -200px;
+  top: 0;
+  height: 100vh;
+  width: 200px;
+  background-color: brown;
+  transition: all 1s;
+}
+@media only screen and (min-width: 600px) {
+  #nav-desk {
+    display: block;
+  }
+  #nav-mob {
+    display: none;
+  }
+}
